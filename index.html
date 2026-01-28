@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Progress Tracker | Heritage Heart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Libre+Franklin:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-content">
+          <div class="logo-section">
+            <h1 class="logo-text">Heritage Heart</h1>
+          </div>
+          <p class="tagline">Senior Move Managers</p>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <div class="hero-section">
+          <h2 class="page-title">Transition Progress Tracker</h2>
+          <p class="subtitle">Coordinate your loved one's move with confidence and clarify</p>
+        </div>
+
+        <div class="progress-overview">
+          <div class="progress-card">
+            <span class="progress-number" id="completedCount">0</span>
+            <span class="progress-label">Tasks Completed</span>
+          </div>
+          <div class="progress-card">
+            <span class="progress-number" id="remainingCount">0</span>
+            <span class="progress-label">Tasks Remaining</span>
+          </div>
+          <div class="progress-card highlight">
+            <span class="progress-number" id="progressCount">0%</span>
+            <span class="progress-label">Overall Progress</span>
+          </div>
+        </div>
+
+        <div class="checklist-sections">
+          <!-- Pre-move planning -->
+          <section class="checklist-section" data-section="pre-move">
+            <div class="section-header">
+              <h3 class="section-title">Pre-Move Planning</h3>
+              <span class="section-progress">0/6</span>
+            </div>
+            <ul class="task-list">
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Schedule facility tour and confirm move-in date</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Review facility requirements and room dimensions</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Create floor plan for new living space</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Begin sorting items (keep, donate, sell, discard)</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Schedule estate sale or donation pickups if needed</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Contact Heritage Heart for downsizing consultation</span>
+                </label>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Utilities & Service -->
+           <section class="checklist-section" data-section="utilities">
+            <div class="section-header">
+              <h3 class="section-title">Utilities & Services</h3>
+              <span class="section-progress">0/8</span>
+            </div>
+            <ul class="task-list">
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Schedule electricity disonnection at current home</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Cancel or transfer water service</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Disconnect gas service</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Cancel cable/internet or transfer to family member</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Forward phone service or disconnect landline</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Cancel lawn care and home maintenance</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Cancel newspaper and magazine subscription</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Arrange for trash/recycling service cancellation</span>
+                </label>
+              </li>
+            </ul>
+          </section>
+
+          <!-- address changes -->
+          <section class="checklist-section" data-section="address">
+            <div class="section-header">
+              <h3 class="section-title">Address Changes</h3>
+              <span class="section-progress">0/7</span>
+            </div>
+            <ul class="task-list">
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">File USPS mail forwarding request</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Update address with Social Security Administration</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Notif Medicare/Medicaid of address change</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Update address with all insurance providers</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Change address with banks and financial institutions</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Update DMV records and voter registration</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Notify credit card companies and subscription services</span>
+                </label>
+              </li>
+            </ul>
+          </section>
+
+          <!-- medical coordination -->
+          <section class="checklist-section" data-section="medical">
+            <div class="section-header">
+              <h3 class="section-title">Medical Coordination</h3>
+              <span class="section-progress">0/6</span>
+            </div>
+            <ul class="task-list">
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Transfer medical records to new healthcare providers</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Identify nearby pharmacies and transfer prescriptions</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Schedule appointment with new primary care physician</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Arrange for medical equipment delivery to new location</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Notify home health services of address change</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Update facility with current medication list</span>
+                </label>
+              </li>
+            </ul>
+          </section>
+
+          <!-- moving day -->
+          <section class="checklist-section" data-section="moving">
+            <div class="section-header">
+              <h3 class="section-title">Moving Day</h3>
+              <span class="section-progress">0/5</span>
+            </div>
+            <ul class="task-list">
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Confirm moving company arrival time and contact</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Prepare essentials bag (medications, documents, valuables)</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Coordinate with facility for move-in access and parking</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Conduct final walkthrough of current home</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Supervice furniture placement and unpacking</span>
+                </label>
+              </li>
+            </ul>
+          </section>
+
+          <!-- post move settlement -->
+          <section class="checklist-section" data-section="post-move">
+            <div class="section-header">
+              <h3 class="section-title">Post-Move Settlement</h3>
+              <span class="section-progress">0/6</span>
+            </div>
+            <ul class="task-list">
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Arrange personal items and photographs for comfort</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Introduce resident to facility staff and neighbours</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Review facility activities calendar and sign up for programs</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Set up regular family visit schedule</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Finalize home sale or rental arrangements for previous residence</span>
+                </label>
+              </li>
+              <li class="task-item">
+                <label class="task-label">
+                  <input type="checkbox" class="task-checkbox">
+                  <span class="task-text">Schedule follow-up with Heritage Heart to ensure satisfaction</span>
+                </label>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="action-buttons">
+          <button class="btn btn-secondary" id="resetBtn">Reset All</button>
+          <button class="btn btn-primary" id="printBtn">Print Checklist</button>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p class="footer-text">
+          Need help with your transition? Contact Heritage Heart Senior Move Managers at
+          <a href="tel:1-234-567-8910" class="footer-link">1-234-567-8910</a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
