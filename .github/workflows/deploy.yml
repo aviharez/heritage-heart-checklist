@@ -51,7 +51,7 @@ jobs:
         run: |
           echo "Linting CSS files..."
           # create styleint config
-          cat > /stylelintrc.json << 'EOF'
+          cat > .stylelintrc.json << 'EOF'
           {
             "extends": "stylelint-config-standard",
             "rules": {
